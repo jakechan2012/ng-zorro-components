@@ -1,0 +1,4 @@
+<nz-tree *ngIf="!loading" [(ngModel)]="treeData" [nzDefaultExpandedKeys]="myDefaultExpandedKeys" [nzAsyncData]="myAsyncData"
+  [nzShowLine]="true" [nzCheckable]="myCheckable" (nzExpandChange)="onExpand($event)" (nzClick)="onClick($event)">
+</nz-tree>
+<nz-spin *ngIf="loading"></nz-spin>

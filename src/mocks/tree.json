@@ -1,0 +1,11 @@
+[
+  {
+    "title": "title-1",
+    "key": "key-{random}"
+  },
+  {
+    "title": "title-2",
+    "key": "key-{random}",
+    "isLeaf": true
+  }
+]

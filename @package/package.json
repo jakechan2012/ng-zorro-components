@@ -1,0 +1,29 @@
+{
+  "name": "@myscope/components",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "preinline": "rm -rf src-inline && cp -r src src-inline",
+    "inline": "node scripts/inline.js",
+    "precompiler": "npm run inline",
+    "compiler": "rm -rf dist && tsc",
+    "postcompiler": "rm -rf src-inline",
+    "prepublish": "npm run compiler"
+  },
+  "main": "./dist/my-components.module.js",
+  "typings": "./dist/my-components.module.d.ts",
+  "dependencies": {
+    "ng-zorro-antd": "^0.7.0-beta.5",
+    "rxjs": "^6.1.0",
+    "rxjs-compat": "^6.1.0"
+  },
+  "devDependencies": {
+    "angular2-inline-template-style": "^1.3.0"
+  },
+  "peerDependencies": {
+    "@angular/animations": "^6.0.0",
+    "@angular/common": "^6.0.0",
+    "@angular/core": "^6.0.0",
+    "@angular/forms": "^6.0.0"
+  }
+}
