@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "lessc": "lessc src/styles.less src/styles.css --js",
-    "prestart": "npm run lessc"
+    "prestart": "npm run lessc",
+    "postinstall": "cd @package && npm install"
   },
   "private": true,
   "dependencies": {
